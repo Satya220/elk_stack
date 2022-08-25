@@ -8,7 +8,7 @@ resource "aws_instance" "Elastic_server" {
 
   vpc_security_group_ids = [aws_security_group.lab_vpc.id]
   key_name = "talent-academy-lab"
-  subnet_id = data.aws_subnet.private subnet.id
+  subnet_id = data.aws_subnet.private_subnet.id
 }
 
 resource "aws_instance" "Logstash_server" {
@@ -21,7 +21,7 @@ resource "aws_instance" "Logstash_server" {
 
   vpc_security_group_ids = [aws_security_group.lab_vpc.id]
   key_name = "talent-academy-lab"
-  subnet_id = data.aws_subnet.private subnet.id
+  subnet_id = data.aws_subnet.private_subnet.id
 }
 
 resource "aws_instance" "Kibana_server" {
@@ -33,7 +33,7 @@ resource "aws_instance" "Kibana_server" {
   }
   vpc_security_group_ids = [aws_security_group.lab_vpc.id]
   key_name = "talent-academy-lab"
-  subnet_id = data.aws_subnet.public subnet.id
+  subnet_id = data.aws_subnet.public_subnet.id
 }
 
 resource "aws_instance" "Bastion_host" {
@@ -45,7 +45,7 @@ resource "aws_instance" "Bastion_host" {
   }
   vpc_security_group_ids = [aws_security_group.lab_vpc.id]
   key_name = "talent-academy-lab"
-  subnet_id = data.aws_subnet.public subnet.id
+  subnet_id = data.aws_subnet.public_subnet.id
 }
 
 resource "aws_instance" "Demo-1" {
