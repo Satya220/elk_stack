@@ -1,5 +1,5 @@
 resource "aws_route_table" "internet_route_tbl" {
-  vpc_id = aws_vpc.elk_vpc.id
+  vpc_id = aws_vpc.lab_vpc.id
 
   route {
     cidr_block = "0.0.0.0/0"
@@ -12,7 +12,7 @@ resource "aws_route_table" "internet_route_tbl" {
 }
 
 resource "aws_route_table" "nat_route_tbl" {
-  vpc_id = aws_vpc.elk_vpc.id
+  vpc_id = aws_vpc.lab_vpc.id
 
   route {
     cidr_block = "0.0.0.0/0"
