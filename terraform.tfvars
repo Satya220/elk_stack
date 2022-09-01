@@ -1,9 +1,4 @@
-vpc_name            = "lab_vpc"
-aws_region          = "eu-west-1"
 availability_zone_1 = "eu-west-1a"
 availability_zone_2 = "eu-west-1b"
 availability_zone_3 = "eu-west-1c"
-vpc_cidr            = "192.168.0.0/16"
-cidr_public         = "192.168.1.0/24"
-cidr_private_1      = "192.168.2.0/24"
-cidr_private_2      = "192.168.3.0/24"
+
